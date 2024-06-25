@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+@media screen and (max-width : 880px){
+    .navbar{
+        display: none;
+    }
+
+    .hero-section {
+        height: 20rem;
+    }
+    .hidden-bar-content{
+        bottom: 13rem;
+    }
+    .hero-section .content {
+        bottom: 2rem;
+    }
+    .hidden-bar{
+        display: block;
+    }
+    .post-section{
+        display: none;
+    }
+    .post-section-sm{
+        display: block;
+    }
+
+    .side-section{
+        display: none;
+    }
+
+
+    .card{
+        border: none;
+        border-bottom: 2px solid rgb(210, 208, 208);
+        box-shadow: 2px 40px rgb(246, 244, 244);
+    }
+
+    .hidden-form{
+        display: block;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width : 1430px){
+    .mid-section{
+       
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width : 1250px){
+    .mid-section{
+       
+        margin-left:0;
+        margin-right:0;
+        
+    }
 }
